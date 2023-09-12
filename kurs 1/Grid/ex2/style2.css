@@ -1,0 +1,43 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 120px);
+}
+
+.wrapper header,
+aside,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.låda1 {
+  grid-column: 1;
+  grid-row: 1 / span 6;
+  background-color: violet;
+}
+
+.låda2 {
+  grid-column: 2 / span 5;
+  grid-row: 1 / span 2;
+  background-color: yellow;
+}
+
+.låda3 {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 2;
+  background-color: green;
+}
+.låda4 {
+  grid-column: 4 / span 3;
+  grid-row: 3 / span 2;
+  background-color: red;
+}

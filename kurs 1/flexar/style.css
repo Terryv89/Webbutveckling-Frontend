@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  height: 100;
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+  justify-content: end;
+  align-items: start;
+
+  /* ifall man vill att boxarna inte ska krympa och
+  flytta till nöästa rad istället
+  flex-wrap: wrap;*/
+}
+
+.item {
+  flex-basis: 100px;
+  height: 70;
+  background: lightgray;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styra enskilt item */
+.item:nth-of-type(1) {
+  background-color: darkgray;
+}
+.item:nth-of-type(2) {
+}
+.item:nth-of-type(3) {
+}
+.item:nth-of-type(4) {
+}
+
+/* order:1;2,3; om man vill flytta ordning på dom
+  assign-self: start;end;center; ifall man vill flytta 1 sak  */

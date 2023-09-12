@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "adineuePRO";
+  src: url("https://adl-foundation.adidas.com/fonts/adidas/2-3-1/adineuePRO-Bold.woff2");
+}
+
+@font-face {
+  font-family: "AdihausDIN";
+  src: url("https://adl-foundation.adidas.com/fonts/adidas/2-3-1/AdihausDIN-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AdihausDIN";
+  src: url("https://adl-foundation.adidas.com/fonts/adidas/2-3-1/AdihausDIN-Bold.woff2");
+  font-weight: bold;
+  font-style: bold;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.landscape {
+  width: 900px;
+  height: 450px;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  background-color: #ffc400;
+  background-image: url(https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-5-september/main/flexbox-bootcamp/product-component-landscape/img/adidas_superstar.png);
+  background-position: 50% 50%;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.price {
+  font-family: AdihausDIN;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-text {
+  margin-top: 50px;
+  margin-left: 30px;
+  /*width: 80%;*/
+}
+
+h1 {
+  font-family: adineuePRO;
+  font-size: 2.8em;
+  margin: 0;
+}
+
+h3 {
+  font-family: AdihausDIN;
+  font-weight: bold;
+  margin: 0;
+}
+
+.right-text p {
+  font-family: AdihausDIN;
+  font-size: 1.05em;
+}
+
+button {
+  border: 2px solid black;
+  background-color: white;
+  width: 180px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.2) rotate(360deg);
+}
