@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add styles for dice spinning animation */
+      .dice.spin {
+        animation: spin 2s infinite linear;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="dice" id="dice">
+      <aside class="dot1"></aside>
+      <aside class="dot2"></aside>
+      <aside class="dot3"></aside>
+      <aside class="dot4"></aside>
+      <aside class="dot5"></aside>
+      <aside class="dot6"></aside>
+    </article>
+
+    <script>
+      const dice = document.getElementById("dice");
+      const dots = dice.querySelectorAll("aside");
+      let timer;
+
+      // Function to change dots on hover
+      dice.addEventListener("mouseenter", () => {
+        // Remove the "spin" class to stop spinning
+        dice.classList.remove("spin");
+
+        // Hide all dots
+        dots.forEach((dot) => (dot.style.display = "none"));
+
+        // Generate a random number between 1 and 6 for the number of dots to show
+        const numberOfDots = Math.floor(Math.random() * 6) + 1;
+
+        // Randomly select and display the specified number of dots
+        for (let i = 0; i < numberOfDots; i++) {
+          const randomDot = dots[Math.floor(Math.random() * dots.length)];
+          randomDot.style.display = "block";
+        }
+      });
+
+      // Function to start spinning on mouse leave
+      dice.addEventListener("mouseleave", () => {
+        // Clear any previous timers
+        clearTimeout(timer);
+
+        // Start spinning after 2 seconds
+        timer = setTimeout(() => {
+          dice.classList.add("spin");
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
