@@ -198,6 +198,7 @@ article div div {
   height: 250px;
   background-color: rgb(59, 59, 59);
   font-family: "Fira Sans", sans-serif;
+  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
