@@ -37,6 +37,10 @@ header h1 {
   align-self: flex-end;
 }
 
+.ninja:hover {
+  opacity: 0;
+}
+
 .main-wrap {
   height: 1150px;
   width: 1000px;
@@ -93,6 +97,7 @@ section div div {
 }
 section div div:hover {
   transform: scale(1.1);
+  transform: rotate(360deg);
   transition: transform 0.5s;
 }
 button {
@@ -103,6 +108,18 @@ button {
   background: #e83f57;
   border: none;
   margin-bottom: 10px;
+}
+.buy-button:hover {
+  background: #e83f57;
+  transform: scale(1.3);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.big-button:hover {
+  background: #e83f57;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  cursor: pointer;
 }
 
 p {
@@ -201,6 +218,16 @@ article div div {
   color: white;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
+  align-items: first baseline;
+  padding-top: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e83f57;
+  text-decoration: none;
 }
