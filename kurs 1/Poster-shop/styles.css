@@ -1,0 +1,222 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+
+header {
+  height: 400px;
+  width: 100%;
+  background: #3de07e;
+  display: grid;
+  grid-template-columns: 1fr 450px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.header-nav {
+  margin-top: 20px;
+  margin-left: 20px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+header h1 {
+  font-size: 70px;
+  font-family: "Roboto", sans-serif;
+  grid-column: 2 / span2;
+  grid-row: 2;
+  align-self: center;
+  justify-content: center;
+}
+
+.ninja {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.main-wrap {
+  height: 1150px;
+  width: 1000px;
+  background: black;
+  display: flex;
+}
+
+.posters {
+  padding-top: 60px;
+  padding-left: 170px;
+  height: 1000px;
+  width: 70%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.char1 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-1.png");
+}
+.char2 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-2.png");
+}
+.char3 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-3.png");
+}
+.char4 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-4.png");
+}
+.char5 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-5.png");
+}
+.char6 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-6.png");
+}
+.char7 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-8.png");
+}
+.char8 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-10.png");
+}
+.char9 {
+  background-image: url("https://raw.githubusercontent.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/main/postershop-exercise/img/char-11.png");
+}
+
+section div div {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 212px;
+  width: 212px;
+}
+section div div:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+button {
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: #e83f57;
+  border: none;
+  margin-bottom: 10px;
+}
+
+p {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+h3 {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: -1px;
+}
+
+.main2 {
+  height: 600px;
+  width: 1000px;
+  background: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.bigposterwrapper1 {
+  margin-left: 170px;
+  margin-right: 25px;
+  background-color: white;
+  height: 450px;
+  width: 321px;
+  display: flex;
+  flex-direction: column;
+}
+.bigposterwrapper2 {
+  margin-right: 168px;
+  background-color: white;
+  height: 450px;
+  width: 321px;
+  display: flex;
+  flex-direction: column;
+}
+
+article div div {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 321px;
+}
+.h3big1 {
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  margin-left: 20px;
+}
+.bigp {
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 13px;
+  margin-left: 20px;
+}
+.h3big2 {
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  margin-left: 20px;
+}
+.bigp2 {
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.big-button {
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  border-radius: 4px;
+  background: #e83f57;
+  border: none;
+  height: 40px;
+  width: 160px;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+
+.char10 {
+  background-image: url(https://github.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/blob/main/postershop-exercise/img/char-12.png?raw=true);
+}
+
+.char11 {
+  background-image: url(https://github.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/blob/main/postershop-exercise/img/char-7.png?raw=true);
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  background: rgba(27, 21, 21, 0.78);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.footer-nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: grid;
+}
+
+nav {
+  margin-top: 20px;
+  margin-left: 20px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+article {
+  margin-top: 20px;
+  margin-left: 20px;
+  grid-column: 2;
+  grid-row: 1;
+}
