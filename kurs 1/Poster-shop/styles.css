@@ -193,30 +193,13 @@ article div div {
   background-image: url(https://github.com/FRK23G-Webbutveckling-Frontend/lektion-14-september/blob/main/postershop-exercise/img/char-7.png?raw=true);
 }
 
-footer {
-  height: 150px;
+.footer {
   width: 100%;
-  background: rgba(27, 21, 21, 0.78);
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.footer-nav {
+  height: 250px;
+  background-color: rgb(59, 59, 59);
+  font-family: "Fira Sans", sans-serif;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  display: grid;
-}
-
-nav {
-  margin-top: 20px;
-  margin-left: 20px;
-  grid-column: 1;
-  grid-row: 1;
-}
-
-article {
-  margin-top: 20px;
-  margin-left: 20px;
-  grid-column: 2;
-  grid-row: 1;
+  justify-content: space-around;
 }
