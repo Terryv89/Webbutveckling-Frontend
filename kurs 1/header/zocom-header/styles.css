@@ -17,3 +17,12 @@ nav {
   align-items: center;
   gap: 8px;
 }
+
+button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+img {
+  margin-top: 10px;
+  margin-left: 10px;
+}
