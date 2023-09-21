@@ -8,6 +8,8 @@ body {
   display: flex;
   gap: 20px;
   flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 125px;
 }
 
 .item1 {
@@ -46,6 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 250px;
+    gap: 10px;
   }
   .main {
     flex-direction: column;
@@ -57,5 +60,6 @@ body {
 
   .item1 {
     min-height: 50px;
+    width: 206px;
   }
 }
