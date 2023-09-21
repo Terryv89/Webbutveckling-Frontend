@@ -2,7 +2,6 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  margin-left: 300px;
 }
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
 
@@ -233,58 +232,3 @@ a:hover {
   text-decoration: none;
 }
 
-/* Mobile Devices (up to 767px) */
-@media screen and (max-width: 767px) {
-  body {
-    margin-left: 0; /* Remove the left margin on smaller screens */
-  }
-
-  header {
-    height: 200px; /* Reduce header height on smaller screens */
-    grid-template-columns: 1fr 1fr; /* Adjust grid columns for header */
-    grid-template-rows: 1fr 1fr; /* Adjust grid rows for header */
-  }
-
-  .header-nav {
-    margin-top: 10px;
-    margin-left: 10px;
-    grid-row: 1; /* Adjust grid position for header-nav */
-    grid-column: 1; /* Adjust grid position for header-nav */
-  }
-
-  header h1 {
-    font-size: 30px; /* Reduce font size for h1 on smaller screens */
-    grid-column: 2; /* Adjust grid position for h1 */
-  }
-
-  .ninja {
-    grid-row: 2; /* Adjust grid position for ninja */
-  }
-
-  .main-wrap {
-    width: 100%; /* Make the main content full width on smaller screens */
-    flex-direction: column; /* Stack posters vertically on smaller screens */
-  }
-
-  .posters {
-    padding-left: 10px; /* Adjust left padding for posters */
-    height: auto; /* Allow posters to adjust height based on content */
-    width: 100%; /* Make posters full width on smaller screens */
-  }
-
-  section div div {
-    height: 150px; /* Reduce poster image size on smaller screens */
-    width: 150px; /* Reduce poster image size on smaller screens */
-  }
-
-  .bigposterwrapper1,
-  .bigposterwrapper2 {
-    margin: 0 auto; /* Center the big posters on smaller screens */
-    margin-bottom: 20px; /* Add some spacing between big posters */
-  }
-
-  .footer {
-    flex-direction: column; /* Stack footer content vertically on smaller screens */
-    height: auto; /* Allow the footer to adjust height based on content */
-  }
-}
