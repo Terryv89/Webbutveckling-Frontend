@@ -1,0 +1,111 @@
+body {
+  background-color: white;
+
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ball {
+  align-self: flex-start;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: rgb(66, 3, 66);
+  margin: 30px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.long-balls {
+  border-radius: 25px;
+  width: 240px;
+  height: 50px;
+  background-color: purple;
+  margin-bottom: 50px;
+}
+
+main {
+  display: flex;
+  height: 160px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  background-color: lightpink;
+  height: 70px;
+  width: 188px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+}
+.left {
+  margin-left: 50px;
+}
+
+aside {
+  background-color: rgb(206, 146, 156);
+  height: 42px;
+  width: 180px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  margin-top: 25px;
+  width: 100vw;
+  height: 50px;
+  background-color: greenyellow;
+}
+@media screen and (max-width: 480px) {
+  header,
+  section,
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ball {
+    align-self: center;
+  }
+  .long-balls {
+    border-radius: 25px;
+    width: 360px;
+    margin-bottom: 5px;
+  }
+  main {
+    height: auto;
+    flex-direction: row;
+  }
+  article {
+    flex-direction: column;
+    min-width: 470px;
+    align-self: center;
+  }
+  footer {
+    min-height: 30px;
+    width: 470px;
+    align-self: center;
+  }
+  aside {
+    flex-direction: row;
+    align-self: center;
+    width: 140px;
+  }
+  .left {
+    margin: 5px;
+  }
+}
