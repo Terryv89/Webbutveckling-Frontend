@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap");
+body {
+  background: #ebebeb;
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.big-article {
+  background: #c7ddea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 2;
+  grid-column: 1 /4;
+}
+.big-article-h1 {
+  color: #000;
+  font-family: Frank Ruhl Libre;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: -0.9px;
+  width: 305px;
+  margin-bottom: inherit;
+}
+.big-article-p {
+  width: 295px;
+}
+p {
+  font-family: Fira sans;
+}
+.family-img {
+  width: 200px;
+  height: 200px;
+  align-self: end;
+}
+.orange-article {
+  background: #f17949;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 4 / 7;
+}
+
+.yellowish-article {
+  background: #ffb939;
+  width: 500px;
+  height: 250px;
+  grid-column: 4 / 7;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.orange-h6,
+.yellow-h6 {
+  font-family: Fira Sans;
+  font-size: 11px;
+  margin: 0;
+}
+.orange-h1,
+.yellow-h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 32px;
+  font-style: normal;
+  margin: 0;
+}
+.bluebutton {
+  grid-column: 1;
+  grid-row: 2;
+  width: 131px;
+  height: 39px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  width: 131px;
+  height: 39px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-links-home,
+.nav-links {
+  color: #000;
+  text-align: center;
+  font-family: Fira Sans;
+  font-size: 12px;
+}
+.nav-links {
+  opacity: 0.4;
+}
+
+.upper-main {
+  background-color: #a9a19e;
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr 1fr 1fr 1fr 90px;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.upper-main-h1 {
+  color: #fff;
+  font-size: 45px;
+  font-style: normal;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+.upper-main-button {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.upper-main-p {
+  font-family: Fira sans;
+  grid-column: 5 / span 2;
+}

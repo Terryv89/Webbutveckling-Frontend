@@ -1,0 +1,23 @@
+* { /** Universal selektor - selektera alla element på sidan */
+    box-sizing: border-box; /** Gör att CSS räknar med padding och border i din width och height */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.box-1 {
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.box-2 {
+    background-color: lavender;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
