@@ -67,6 +67,7 @@ p {
 .yellow-h6 {
   font-family: Fira Sans;
   font-size: 11px;
+  color: #00000080;
   margin: 0;
 }
 .orange-h1,
@@ -117,15 +118,16 @@ button {
   background-color: #a9a19e;
   display: grid;
   grid-template-columns: 90px 1fr 1fr 1fr 1fr 1fr 90px;
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: 99px 130px 72px 129px 80px 140px;
 }
 
 .upper-main-h1 {
   color: #fff;
-  font-size: 45px;
+  font-size: 43px;
   font-style: normal;
   grid-column: 2 / span 2;
   grid-row: 2 / span 2;
+  margin: 0;
 }
 .upper-main-button {
   grid-column: 2;
@@ -135,4 +137,127 @@ button {
 .upper-main-p {
   font-family: Fira sans;
   grid-column: 5 / span 2;
+  grid-row: 2;
+}
+
+.card1 {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  grid-row: 6;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.card1-box,
+.card2-box,
+.card3-box {
+  width: 192px;
+  height: 149px;
+  background-color: #c7ddea;
+  align-self: center;
+  transform: translateY(-22px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.card2-box {
+  background-color: #ffb939;
+}
+.card3-box {
+  background-color: #f17949;
+}
+
+.card2 {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  grid-row: 6;
+  grid-column: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.card3 {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  grid-row: 6;
+  grid-column: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.card-img {
+  width: 100px;
+  height: 50px;
+}
+
+.card-title {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: Frank Ruhl Libre;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card-p {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-family: Fira Sans;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px; /* 163.636% */
+}
+
+.lower-main {
+  background: #fab131;
+  height: 650px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 166px 100px 1fr 1fr 1fr 155px;
+}
+
+.lower-main-h1 {
+  grid-row: 2;
+  color: #fff;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -0.9px;
+  grid-column: 3 / span 3;
+}
+
+.lower-main-p {
+  grid-column: 3 / span 3;
+  grid-row: 4;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-family: Fira Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.lower-main-p2 {
+  grid-column: 3 / span 3;
+  grid-row: 5;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-family: Fira Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
 }
