@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfair-display.woff2") format("woff2"),
+    url("../fonts/playfair-display.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+  background-color: lightgrey;
+  font: 300 100%/1.5 "Playfair Display", serif;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 35px;
+  padding: 15px;
+  background-color: #a89e9e;
+  min-height: 50px;
+}
+.nav-logo__logo {
+  max-width: 141px;
+  max-height: 40px;
+  margin-right: auto;
+  width: 100%;
+  transition: transform 0.9s ease;
+}
+.nav-logo__logo:hover {
+  transform: rotate(360deg);
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 23px;
+  opacity: 30%;
+}
+a:hover {
+  color: red;
+}
+
+h1,
+h2 {
+  font: normal 100%/1.1 "Playfair Display", serif;
+}
+h1 {
+  font-size: 4rem;
+  text-shadow: 1px 2px 3px rgba(0, 10, 30, 0.5);
+}
+h2 {
+  font-size: 2.5rem;
+}
+header {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 46%;
+  width: 100%;
+  background-image: url(https://www.daikin.eu/en_us/about/case-studies/van-der-valk/_jcr_content/root/main_container/header/image-and-text.coreimg.jpeg/1651304163742/van-der-valk-hotel-header.jpeg);
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 25px;
+}
+
+.main-title {
+  max-height: 80px;
+  /*background-color: #a89e9e; */
+  display: flex;
+  justify-content: center;
+  transform: translateY(-200px);
+  opacity: 0.8;
+  color: gray;
+  margin-top: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(
+      -100%
+    ); /* Initial position outside of the visible area */
+  }
+  to {
+    transform: translateX(
+      0
+    ); /* Final position, bringing the image into view from the left */
+  }
+}
+.main__pic1 {
+  background-repeat: no-repeat;
+  max-height: 282px;
+  max-width: 510px;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  position: relative;
+  animation: slideIn 1.5s ease forwards;
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(
+      100%
+    ); /* Initial position outside of the visible area on the right */
+  }
+  to {
+    transform: translateX(
+      0
+    ); /* Final position, bringing the image into view from the right */
+  }
+}
+
+.main__pic2 {
+  background-repeat: no-repeat;
+  grid-column: 2;
+  grid-row: 2;
+  max-height: 280px;
+  max-width: 510px;
+  width: 100%;
+  animation: slideInFromRight 1.5s ease forwards;
+}
+
+section p {
+  margin-left: 20px;
+  margin-right: 20px;
+  hyphens: auto;
+}
+.inspired {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h2-lines {
+  min-width: 200px;
+  color: white;
+}
+.inspired__line {
+  height: 1px;
+  border: 0;
+  color: #333;
+  background-color: #333;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.inspired__heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 150px;
+  background-color: #a89e9e;
+  gap: 30px;
+  margin-top: 50px;
+  color: white;
+  padding-top: 15px;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*   ABOUT US          */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-us__title {
+}
+
+/*       BOOKING             */
+
+.booking-box__pic {
+  max-width: 450px;
+  max-height: 300px;
+  width: 100%;
+}
+.booking-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+.booking-box__innehall {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+button {
+  max-width: 260px;
+  align-self: center;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.booking-title__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-title {
+  justify-content: center;
+  align-self: center;
+}
+
+figure {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: unset;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+  footer p {
+    text-align: center;
+  }
+  a {
+    font-size: 19px;
+  }
+  .nav-logo__logo {
+    display: none;
+  }
+  .main-nav {
+    justify-content: center;
+    font-size: 28px;
+  }
+  .main__pic1,
+  .main__pic2 {
+    max-width: unset;
+  }
+  .booking-box {
+    flex-direction: column;
+  }
+  .booking-box__pic {
+    max-width: unset;
+  }
+  .booking-title {
+    font-size: 2rem;
+  }
+}
