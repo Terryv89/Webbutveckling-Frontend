@@ -189,6 +189,31 @@ footer {
 
 /*       BOOKING             */
 
+.booking__container {
+  background-color: #a89e9e;
+  padding: 5px;
+  padding-top: 15px;
+}
+
+.booking__input--grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.booking__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  background-color: lightgray;
+}
+.booking__search {
+  margin: 15px 0 10px 45px;
+}
+
+/*          */
+
 .booking-box__pic {
   max-width: 450px;
   max-height: 300px;
@@ -262,5 +287,8 @@ figure {
   }
   .booking-title {
     font-size: 2rem;
+  }
+  .booking__input--grid {
+    grid: unset;
   }
 }
