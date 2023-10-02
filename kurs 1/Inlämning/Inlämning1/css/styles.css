@@ -223,6 +223,7 @@ footer {
   display: flex;
   flex-direction: row;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 .booking-box__innehall {
   display: flex;
