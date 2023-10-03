@@ -25,14 +25,14 @@ body {
   background-color: #a89e9e;
   min-height: 50px;
 }
-.nav-logo__logo {
+.main-nav-logo__logo {
   max-width: 141px;
   max-height: 40px;
   margin-right: auto;
   width: 100%;
   transition: transform 0.9s ease;
 }
-.nav-logo__logo:hover {
+.main-nav-logo__logo:hover {
   transform: rotate(360deg);
 }
 a {
