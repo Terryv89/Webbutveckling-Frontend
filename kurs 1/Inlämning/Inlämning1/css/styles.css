@@ -225,7 +225,7 @@ footer {
   margin-bottom: 25px;
   margin-top: 25px;
 }
-.booking-box__innehall {
+.booking-box__content {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
