@@ -293,4 +293,7 @@ figure {
   .booking__input--grid {
     grid: unset;
   }
+  .inspired__line {
+    max-width: 50px;
+  }
 }
