@@ -193,6 +193,7 @@ footer {
   background-color: #a89e9e;
   padding: 5px;
   padding-top: 15px;
+  border-radius: 8px;
 }
 
 .booking__input--grid {
@@ -269,7 +270,7 @@ figure {
   a {
     font-size: 19px;
   }
-  .nav-logo__logo {
+  .main-nav-logo__logo {
     display: none;
   }
   .main-nav {
