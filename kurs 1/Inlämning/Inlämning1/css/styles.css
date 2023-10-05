@@ -294,6 +294,6 @@ figure {
     grid: unset;
   }
   .inspired__line {
-    max-width: 50px;
+    display: none;
   }
 }
