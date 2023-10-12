@@ -1,5 +1,6 @@
 const prompt = require("prompt-sync")();
 
+console.log("       ");
 console.log("Welcome to this computer hardware Quiz!");
 let count = 0;
 const totalQuestions = 3;
