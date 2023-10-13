@@ -1,57 +1,24 @@
-body {
-  background-image: url(https://www.killthecan.org/wp-content/uploads/2022/02/Lets-Play-A-Game-Feature.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 button {
-  background-color: black;
-  border: 2px solid white;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
+  width: 125px;
+  height: 40px;
+}
+
+.therock {
+  max-width: 125px;
+  height: 40px;
+}
+
+#imageButton {
   cursor: pointer;
-  margin: 10px;
-  grid-column: 2;
-  grid-row: 6;
-}
-h1 {
-  margin-left: 130px;
-  grid-column: 3;
-  color: white;
-}
-h3 {
-  color: white;
-  margin-left: 100px;
-  grid-column: 1;
-  grid-row: 5;
+  transition: transform 0.3s ease;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+#imageButton:hover {
+  transform: scale(1.1);
 }
 
-input {
-  max-height: 30px;
-  max-width: 120px;
-  margin-top: 15px;
-  grid-column: 2;
-  grid-row: 5;
-}
-
-p {
-  color: white;
-}
-#dittVal {
-  grid-column: 1;
-  grid-row: 7;
-}
-
-#compVal {
-  grid-column: 2;
-  grid-row: 7;
-}
+/*       <img
+        id="imageButton"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1tf8drlHgNmhpg8TC5VvgbrwkPTyplNg2lsP39qAe4HXESH26g9BVqE4UUQADaGDtW04&usqp=CAU"
+        alt="Button Image"
+      />   */
