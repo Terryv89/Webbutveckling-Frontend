@@ -3,21 +3,25 @@ button {
   height: 40px;
 }
 
-.therock {
-  max-width: 125px;
-  height: 40px;
+.wrapper {
 }
 
+/*   skräp
 #imageButton {
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+.therock {
+  max-width: 125px;
+  height: 40px;
 }
 
 #imageButton:hover {
   transform: scale(1.1);
 }
 
-/*       <img
+      <img
         id="imageButton"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1tf8drlHgNmhpg8TC5VvgbrwkPTyplNg2lsP39qAe4HXESH26g9BVqE4UUQADaGDtW04&usqp=CAU"
         alt="Button Image"
