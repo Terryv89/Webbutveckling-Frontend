@@ -3,7 +3,35 @@ button {
   height: 40px;
 }
 
+body {
+  margin: 20px;
+}
+
+h1 {
+  margin-left: 95px;
+}
+
+.scoreBoard {
+  display: flex;
+  flex-direction: row;
+}
+
+#vinstP {
+  margin-right: 85px;
+}
+
+#förlustP {
+  margin-right: 85px;
+}
+
+#ties {
+  margin-right: 85px;
+}
+
 .wrapper {
+  border: 2px solid black;
+  padding: 10px;
+  max-width: 400px;
 }
 
 /*   skräp

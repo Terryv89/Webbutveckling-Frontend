@@ -8,21 +8,22 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Välkommen till Sten sax påse spelet!</h1>
-      <h3>Gör ditt val!</h3>
+      <h1>Sten sax påse!</h1>
 
-      <div class="scoreBoard">
-        <h3>Highscore</h3>
+      <div>
         <p id="vinstP">Wins :</p>
-        <p id="förlustP"></p>
+        <p id="förlustP">Förluster :</p>
+        <p id="ties">Lika :</p>
       </div>
-
+      <h3>Gör ditt val!</h3>
       <button id="btn-sten">Sten</button>
       <button id="btn-sax">Sax</button>
       <button id="btn-påse">Påse</button>
 
-      <p id="dittVal"></p>
-      <p id="compVal"></p>
+      <button onclick="reset()" id="resetbtn">reset</button>
+
+      <p id="dittVal">Du</p>
+      <p id="compVal">Datorn</p>
     </div>
     <script src="script.js"></script>
   </body>
