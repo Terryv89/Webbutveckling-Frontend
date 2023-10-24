@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#guessesTxt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#gameOver {
+  font-size: 36px;
+  color: red;
+  margin-top: 20px;
+  display: none;
+}
+
+#text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#guessInput {
+  width: 80px;
+  height: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#spoiler {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#showSpoiler {
+  font-size: 18px;
+  margin-top: 20px;
+  display: none;
+}
+
+#playAgainBtn {
+  margin-left: auto;
+  margin-right: auto;
+}
