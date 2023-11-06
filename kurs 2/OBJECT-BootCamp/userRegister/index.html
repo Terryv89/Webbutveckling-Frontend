@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <label for="country-select">Välj ett land:</label>
+      <select id="cSelect" name="country">
+        <option value="">--Välj här--</option>
+        <option value="FR">Frankrike</option>
+        <option value="CH">Schweiz</option>
+        <option value="DE">Tyskland</option>
+        <option value="NO">Norge</option>
+        <option value="US">USA</option>
+        <option value="TR">Turkiet</option>
+        <option value="FI">FinDland</option>
+        <option value="GB">Storbritannien</option>
+        <option value="NL">Nederländerna</option>
+        <option value="NZ">Nya Zeeland</option>
+        <option value="AU">Australien</option>
+        <option value="ES">Estland</option>
+        <option value="IE">Irland</option>
+        <option value="DK">Danmark</option>
+        <option value="IR">Iran</option>
+        <option value="BR">Brasilien</option>
+        <option value="CA">Kanada</option>
+      </select>
+      <button id="countryBtn">välj</button>
+    </div>
+    <main></main>
+    <br />
+    <hr />
+    <h4>
+      ur funktion byt id på knapparna och radio knapparna om dom ska funka
+      nedanför
+    </h4>
+    <hr />
+    <button id="femaleBtn1">Female</button>
+    <button id="maleBtn1">Male</button>
+    <br />
+    <hr />
+    <br />
+    <form>
+      <fieldset>
+        <legend>Please select your preferred contact method:</legend>
+        <div>
+          <input type="radio" id="femaleBtn" name="contact" value="Ms,Miss" />
+          <label for="contactChoice1">female</label>
+
+          <input type="radio" id="maleBtn" name="contact" value="Mr,Monsieur" />
+          <label for="contactChoice2">male</label>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    <p id="p1"></p>
+    <br />
+    <br />
+    <button id="starBtn" name="favorite">
+      <svg aria-hidden="true" viewBox="0 0 10 10">
+        <path d="M7 9L5 8 3 9V6L1 4h3l1-3 1 3h3L7 6z" />
+      </svg>
+      click me
+    </button>
+    <p id="p2"></p>
+    <br />
+    <br />
+    <button id="evilBtn">press to show updated emails</button>
+    <p id="updatedEmailsP"></p>
+    <script src="users.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
