@@ -42,7 +42,7 @@ function letsDance(danceStyle) {
     }, 2000);
   });
 }
-letsDance("hiphop")
+letsDance("polka")
   .then((response) => {
     console.log(response);
   })
