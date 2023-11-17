@@ -1,5 +1,6 @@
 const modal = document.querySelector("#modal");
 
+// eventlisteners som öppnar popupen och ger dig info ifrån get data
 jorden.addEventListener("click", () => {
   let jordenV = document.querySelector("#jorden").value;
   modal.showModal();
