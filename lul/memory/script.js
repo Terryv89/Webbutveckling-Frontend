@@ -19,12 +19,9 @@ let awaitingEndOfMove = false;
 
 function youwin() {
   const winEle = document.createElement("div");
-  const winContent = document.createTextNode("You won! Congratulations!");
   winEle.classList.add("youwin");
-  winEle.appendChild(winContent);
 
-  const currentDiv = document.getElementsByTagName("div");
-  document.body.insertBefore(winEle, currentDiv);
+  winEle.innerHTML = "You won !";
 }
 
 function buildTile(color) {
